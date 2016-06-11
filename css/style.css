@@ -1,0 +1,1373 @@
+/* ---------------------------------------------- */
+/* ------------------ CSS RESET ----------------- */
+/* ---------------------------------------------- */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 1.6em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+  border: 0; }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/*  *********************************************************************************************************************** */
+/*  *********************************************************************************************************************** */
+/* ------------------------------------------------------ DASHBOARD STYLING --------------------------------------------- */
+/* *********************************************************************************************************************** */
+/*  *********************************************************************************************************************** */
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 100; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+header {
+  position: absolute;
+  width: 1366px;
+  height: 150px;
+  top: 0;
+  left: 0; }
+
+header #uxlogo {
+  display: inline;
+  position: relative;
+  top: 0;
+  left: 32px; }
+
+header #language {
+  display: inline;
+  position: relative;
+  top: -48px;
+  left: 1096px; }
+
+header #section {
+  display: inline-block;
+  position: relative;
+  top: -24px;
+  left: -32px; }
+
+header #section-title {
+  display: inline-block;
+  font-size: 48px; }
+
+header #section-subtitle {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  top: -4px;
+  font-size: 18px;
+  font-weight: 700; }
+
+header .back {
+  width: 120px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  top: 32px;
+  right: 195px; }
+
+header .back::after {
+  clear: both; }
+
+header .back #back-text {
+  position: relative;
+  display: inline;
+  font-size: 24px;
+  font-weight: 700;
+  top: -16px;
+  left: 4px; }
+
+header .back #leftarrow {
+  display: inline; }
+
+header #family {
+  position: relative;
+  display: inline;
+  float: right;
+  top: 50px;
+  right: 188px;
+  text-align: right; }
+
+header #family::after {
+  clear: both; }
+
+header #family #family-child {
+  display: none; }
+
+footer {
+  position: absolute;
+  width: 1366px;
+  height: 100px;
+  bottom: 0;
+  left: 0; }
+
+footer #links {
+  position: relative;
+  top: 42px;
+  right: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  float: right; }
+
+footer #links::after {
+  clear: both; }
+
+footer #links .link {
+  margin: 0 8px;
+  font-size: 18px; }
+
+footer #links .underline {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #949599; }
+
+footer #links .button {
+  margin: 0 0 0 8px;
+  font-weight: 700;
+  color: #232a3f;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 3px solid #232a3f;
+  border-radius: 8px; }
+
+footer #smartdubai {
+  display: inline-block;
+  position: relative;
+  top: 24px;
+  left: 32px; }
+
+#mainarrow-left {
+  width: 30px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  margin: 0 40px; }
+
+#mainarrow-right {
+  width: 30px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  margin: 0 40px; }
+
+.background {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  width: 1366px;
+  height: 768px;
+  background: #ecf0f1; }
+
+#taphere #message {
+  width: 550px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  margin: 0 50px; }
+
+#taphere #message h1 {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: right; }
+
+#taphere #message #rightarrow {
+  display: inline-block;
+  position: relative;
+  top: -18px;
+  padding-left: 48px; }
+
+#taphere #button-container {
+  width: 500px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  text-align: center; }
+
+#taphere #button-container #dubaihappy {
+  display: none; }
+
+#taphere #button-container h1 {
+  text-transform: uppercase;
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+  display: none; }
+
+#taphere #button-container button {
+  border-radius: 50%;
+  width: 376px;
+  height: 376px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: #29abe2;
+  box-shadow: inset 0 -15px 0 rgba(0, 0, 0, 0.15);
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all .2s ease-in-out; }
+
+#taphere #button-container button:focus {
+  outline: none; }
+
+#taphere #button-container button.loading {
+  border: 182px solid #29abe2;
+  background: none;
+  box-shadow: none; }
+
+#taphere #button-container button:active {
+  box-shadow: inset 0 15px 0 rgba(0, 0, 0, 0.15); }
+
+#taphere .link {
+  margin: 0 8px;
+  font-size: 18px; }
+
+#taphere .button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  margin: 0 0 0 8px;
+  font-weight: 700;
+  color: #232a3f;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 3px solid #232a3f;
+  border-radius: 8px; }
+
+#menu .list-menu {
+  top: 20px;
+  overflow: hidden;
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 514px;
+  width: 412px;
+  margin: 0 16px; }
+
+#menu .list-menu .title {
+  flex: 1 1 auto;
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 22px 22px;
+  margin-bottom: 10px;
+  min-height: 80px;
+  background: #232a3f; }
+
+#menu #transactions-title {
+  width: 410px; }
+
+#menu .list-menu .list {
+  position: relative;;
+  display: block;
+  width: 438px;
+  height: 100%;
+  overflow: auto; }
+
+#menu .list-menu .list-item {
+  flex: 1 1 auto;
+  font-size: 24px;
+  font-weight: 200;
+  background: url("img/experiences/hotel.png") center center/cover no-repeat;
+  position: relative;
+  padding: 12px;
+  margin: 25px 0;
+  width: 380px;
+  left: 17px;
+  height: 135px;
+  border-bottom: 8px solid #2ecc71;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out; }
+
+#menu .list-menu .disabled {
+  opacity: 0.2; }
+
+#menu img.owned {
+  display: none;
+  pointer-events: none;
+  position: relative;
+  top: -160px;
+  right: 26px;
+  float: right;
+  width: 89px;
+  height: 89px;
+  background: url("img/tick2.svg") top right / contain no-repeat; }
+
+#menu .list-menu .list-item::after, #menu .list-menu .list-item::before {
+  content: "";
+  clear: both; }
+
+#menu img.owned > .disabled {
+  display: inline-block;
+  opacity: 1; }
+
+#menu .list-menu .removed {
+  display: none; }
+
+#menu .list-menu .balance-item {
+  font-size: 24px;
+  font-weight: 200;
+  flex: 1 1 auto;
+  background: #fff;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  margin: 25px 0;
+  width: 380px;
+  left: 17px;
+  min-height: 135px;
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out; }
+
+#menu .list-menu .list-item-label {
+  display: inline-block;
+  background: #232a3f;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px 20px; }
+
+#menu #balance-buttons {
+  width: 380px;
+  display: block;
+  text-align: right;
+  margin: 0 25px 25px 0; }
+
+#menu .link {
+  margin: 0 8px;
+  font-size: 18px; }
+
+#menu .button {
+  margin: 0 0 0 8px;
+  font-weight: 700;
+  color: #232a3f;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 3px solid #232a3f;
+  border-radius: 8px; }
+
+#menu .filled {
+  cursor: hand;
+  cursor: pointer;
+  background: #232a3f;
+  color: white;
+  font-weight: 400; }
+
+#menu .list-menu .list-item:hover {
+  transform: translateY(-4px);
+  cursor: hand;
+  cursor: pointer; }
+
+#menu .list-menu .list-item:active {
+  transform: translateY(0px); }
+
+#menu .list-menu .list-item:focus {
+  outline: none; }
+
+/*#add-experiences #list-menu {
+  position: relative;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  margin: 0 60px; }
+
+#add-experiences #list-menu .list-item {
+  font-size: 24px;
+  font-weight: 200;
+  background: url("img/experiences/hotel.png") center center / cover no-repeat;
+  position: relative;
+  display: inline-block;
+  padding: 12px;
+  margin: 35px 25px;
+  width: 288px;
+  height: 135px;
+  border-bottom: 8px solid #2ecc71;
+  transition: all 0.2s ease-in-out; }
+
+#add-experiences #list-menu .list-item:hover {
+  transform: translateY(-4px);
+  opacity: 1.0;
+  cursor: hand;
+  cursor: pointer; }
+
+#add-experiences #list-menu .disabled {
+  opacity: 0.15; }
+
+#add-experiences #list-menu .list-item-label {
+  display: inline-block;
+  background: #232a3f;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px 20px; }
+
+#add-experiences #list-menu .list-item:active {
+  transform: translateY(0px); }*/
+
+#spa #list-menu {
+  position: relative;
+  align-self: center;
+  flex: auto;
+  margin: 0 auto; }
+
+#spa #list-menu .list-item-cont {
+  display: inline-block;
+  vertical-align: top;
+  margin: 35px 25px; }
+
+#spa #list-menu .list-item {
+  background: url("img/experiences/hotel.png") center center / cover no-repeat;
+  background-size: cover;
+  position: relative;
+  display: block;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px;
+  width: 288px;
+  height: 135px;
+  border-bottom: 8px solid #2ecc71;
+  transition: all 0.1s ease-in-out; }
+
+#spa #list-menu .list-item-info {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  width: 288px;
+  padding: 20px; }
+
+#spa #list-menu .list-item-info .list-item-price {
+  margin-top: 40px;
+  font-weight: 700; }
+
+#spa #list-menu .list-item:hover {
+  transform: translateY(-4px);
+  opacity: 1.0;
+  cursor: hand;
+  cursor: pointer; }
+
+#spa #list-menu .disabled {
+  opacity: 0.15; }
+
+#spa #list-menu .list-item-label {
+  display: inline-block;
+  background: #232a3f;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px 20px; }
+
+#spa #list-menu .list-item:active {
+  transform: translateY(0px); }
+
+#glamour #list-menu {
+  position: relative;
+  align-self: center;
+  flex: auto;
+  margin: 0 auto; }
+
+#glamour #list-menu .list-item-cont {
+  display: inline-block;
+  vertical-align: top;
+  width: 288px;
+  margin: 35px 25px; }
+
+#glamour #list-menu form {
+  width: 600px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 50px; }
+
+#glamour #list-menu form div {
+  display: inline-block;
+  width: 170px;
+  margin: 30px 60px; }
+
+#glamour #list-menu form div input {
+  display: none; }
+
+#glamour #list-menu form div label:hover {
+  cursor: hand;
+  cursor: pointer; }
+
+#glamour #list-menu form label::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  margin-top: 6px;
+  left: -45px;
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 50%; }
+
+#glamour #list-menu form div input:checked + label::before {
+  content: "\2022";
+  color: #232a3f;
+  font-size: 64px;
+  text-align: center;
+  line-height: 28px; }
+
+#glamour #list-menu form div label {
+  display: inline-block;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600; }
+
+#glamour #list-menu .list-item {
+  background: url("img/experiences/hotel.png") center center / cover no-repeat;
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px;
+  width: 288px;
+  height: 135px;
+  border-bottom: 8px solid #2ecc71;
+  transition: all 0.1s ease-in-out; }
+
+#glamour #list-menu .list-item-info {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  width: 288px;
+  padding: 20px; }
+
+#glamour #list-menu .list-item-info .list-item-price {
+  margin-top: 40px;
+  font-weight: 700; }
+
+#glamour #list-menu .list-item:hover {
+  transform: translateY(-4px);
+  opacity: 1.0;
+  cursor: hand;
+  cursor: pointer; }
+
+#glamour #list-menu .disabled {
+  opacity: 0.15; }
+
+#glamour #list-menu .list-item-label {
+  display: inline-block;
+  background: #232a3f;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px 20px; }
+
+#glamour #list-menu .list-item:active {
+  transform: translateY(0px); }
+
+#glamour #list-menu #buttons {
+  width: 300px;
+  display: inline;
+  position: relative;
+  margin: 0;
+  margin-right: 80px;
+  margin-top: 40px;
+  float: right; }
+
+#glamour form .button {
+  display: inline;
+  margin: 0 0 0 16px;
+  font-weight: 700;
+  color: #232a3f;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 3px solid #232a3f;
+  border-radius: 8px; }
+
+#glamour form .filled {
+  cursor: hand;
+  cursor: pointer;
+  background: #232a3f;
+  color: white;
+  font-weight: 400; }
+
+#confirm #list-menu {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  align-self: center;
+  flex: auto;
+  margin: 0 auto; }
+
+#confirm #list-menu .list-item {
+  text-align: left;
+  background: url("img/experiences/hotel.png") center center / cover no-repeat;
+  background-size: cover;
+  position: relative;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px;
+  width: 288px;
+  height: 135px;
+  border-bottom: 8px solid #2ecc71;
+  transition: all 0.1s ease-in-out; }
+
+#confirm #list-menu .list-item-info {
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  width: 400px; }
+
+#confirm #list-menu .list-item-info p {
+  display: inline-block;
+  margin-left: 20px; }
+
+#confirm #list-menu .list-item-price {
+  text-align: left;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 20px; }
+
+#confirm #list-menu .list-item-price #cost {
+  margin-top: 20px;
+  font-weight: 600; }
+
+#confirm #list-menu .list-item-label {
+  display: inline-block;
+  background: #232a3f;
+  color: white;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 12px 20px; }
+
+#confirm #list-menu .list-item:active {
+  transform: translateY(0px); }
+
+#confirm #buttons {
+  position: absolute;
+  display: block;
+  top: 490px;
+  left: 784px; }
+
+#confirm .button {
+  display: inline;
+  margin: 0 0 0 16px;
+  font-weight: 700;
+  color: #232a3f;
+  text-decoration: none;
+  padding: 8px 18px;
+  border: 3px solid #232a3f;
+  border-radius: 8px; }
+
+#confirm .filled {
+  cursor: hand;
+  cursor: pointer;
+  background: #232a3f;
+  color: white;
+  font-weight: 400; }
+
+#thankyou #message {
+  width: 550px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  margin: 0 50px; }
+
+#thankyou #message h1 {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: right; }
+
+#thankyou #message #rightarrow {
+  display: inline-block;
+  position: relative;
+  top: -18px;
+  padding-left: 48px; }
+
+#thankyou #button-container {
+  width: 500px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  text-align: center; }
+
+#thankyou #button-container h1 {
+  text-transform: uppercase;
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center; }
+
+#sorry #message {
+  width: 550px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  margin: 0 50px; }
+
+#sorry #message h1 {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: right; }
+
+#sorry #message #rightarrow {
+  display: inline-block;
+  position: relative;
+  top: -18px;
+  padding-left: 48px; }
+
+#sorry #button-container {
+  width: 500px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  text-align: center; }
+
+#sorry #button-container h1 {
+  text-transform: uppercase;
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center; }
+
+#account .list-menu {
+  top: 20px;
+  overflow: hidden;
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 514px;
+  width: 768px;
+  margin: 0 16px; }
+
+#account ul.tabs {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 18px;
+  list-style: none;
+  position: relative;;
+  display: block; }
+
+#account ul.tabs li {
+  background: none;
+  color: #232a3f;
+  display: inline-block;
+  padding: 10px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out; }
+
+#account ul.tabs li.current {
+  background: #232a3f;
+  color: #fff;
+  font-weight: 400; }
+
+#account .tab-content {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  overflow: auto; }
+
+#account .tab-content-title {
+  display: inline-block;
+  margin: 0 0 4px 0;
+  font-weight: 400; }
+
+#account .tab-content.current {
+  display: flex; }
+
+#account .list-menu .tab-content-item {
+  display: inline-block;
+  margin-left: 20px;
+  flex: auto;
+  font-size: 24px;
+  font-weight: 200;
+  position: relative;
+  left: 10px;
+  width: 300px;
+  margin: 0 0 20px 0; }
+
+#account .bar {
+  display: inline-block;
+  width: 100%; }
+
+#account .coloured-bar {
+  width: 0%;
+  transition: all 1s ease-in-out; }
+
+#topup #message {
+  width: 550px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  margin: 0 50px; }
+
+#topup #message h1 {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: right; }
+
+#topup #message #rightarrow {
+  display: inline-block;
+  position: relative;
+  top: -18px;
+  padding-left: 48px; }
+
+#topup #button-container {
+  margin: 0 auto;
+  width: 500px;
+  display: inline-block;
+  align-self: center;
+  flex: auto;
+  text-align: center; }
+
+#topup #button-container h1 {
+  text-transform: uppercase;
+  margin-top: 60px;
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center; }
+
+#topup #slider-topup  {
+  position: relative;
+  top: -60px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+#topup #slider-topup .rs-range-color  {
+  background-color: #29abe2; }
+
+#topup #slider-topup .rs-path-color  {
+  background-color: #c5e2ee; }
+
+#topup #slider-topup .rs-handle  {
+  background-color: #29abe2;
+  padding: 7px;
+  border: 2px solid #29abe2;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25), inset 0 5px 5px rgba(255, 255, 255, 0.25); }
+
+#topup #slider-topup .rs-handle.rs-focus  {
+  border-color: #29abe2; }
+
+#topup #slider-topup .rs-handle:after  {
+  border-color: #29abe2;
+  background-color: #29abe2; }
+
+#topup #slider-topup .rs-border  {
+  border-color: transparent; }
+
+#topup #slider-topup .rs-bg-color  {
+  background: #ecf0f1; }
+
+#topup #slider-topup .rs-tooltip-text  {
+  font-size: 36px;
+  font-weight: 600; }
+
+#topup .link {
+  margin: 0 8px;
+  font-size: 18px; }
+
+#topup .button {
+  margin: 0 0 0 8px;
+  font-weight: 700;
+  color: #232a3f;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 3px solid #232a3f;
+  border-radius: 8px; }
+
+#topup .filled {
+  cursor: hand;
+  cursor: pointer;
+  background: #232a3f;
+  color: white;
+  font-weight: 400; }
+
+#manage .list-menu {
+  top: 20px;
+  overflow: hidden;
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 514px;
+  width: 768px;
+  margin: 0 16px; }
+
+#manage .list-menu .title {
+  position: relative;
+  display: block;
+  color: white;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 22px 22px;
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 80px;
+  background: #232a3f;
+  transition: all 0.1s ease-in-out;
+  vertical-align: middle; }
+
+#manage .list-menu .list {
+  display: inline-block;
+  width: 785px;
+  height: 100%;
+  overflow-y: auto; }
+
+#manage .list-menu .list-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 auto;
+  font-size: 24px;
+  font-weight: 200;
+  position: relative;
+  padding: 12px;
+  margin: 25px auto;
+  width: 95%;
+  height: 135px;
+  background-color: #ecf0f1;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 3.5px 3.5px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out; }
+
+#manage .link {
+  margin: 0 8px;
+  font-size: 18px; }
+
+#manage .button {
+  margin: 0 0 0 8px;
+  font-weight: 700;
+  color: #232a3f;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: 3px solid #232a3f;
+  border-radius: 8px; }
+
+#manage .filled {
+  background: #232a3f;
+  color: white;
+  font-weight: 400; }
+
+#manage .list-menu .list-item:focus {
+  outline: none; }
+
+#manage .list-item-text {
+  text-align: left; }
+
+#manage .list-item-text p {
+  text-align: left;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 600; }
+
+#manage .list-item-text span {
+  text-align: left;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 400; }
+
+#manage .checkbox {
+  display: none; }
+
+#manage .checkbox + label {
+  float: right;
+  width: 51px;
+  height: 51px;
+  margin-right: 35px;
+  background-color: #ecf0f1;
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  box-shadow: inset -5.7px -5.7px 0 rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  position: absolute;
+  top: 40px;
+  right: 10px; }
+
+#manage .checkbox + label:hover {
+  cursor: pointer; }
+
+#manage .checkbox:checked + label::after {
+  pointer-events: none;
+  content: url("img/tick.svg");
+  font-size: 20px;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: white; }
+
+#manage .checkbox:active + label:active {
+  background-color: rgba(0, 0, 0, 0.05); }
+
+#manage .checkbox:active + label:focus {
+  outline: none; }
