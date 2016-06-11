@@ -73,4 +73,13 @@ $(document).ready(function() {
 				socket.emit("change blue", value);
 			}
 	});
+
+	$(".button-animation").click(function() {
+		var animation = $(this).data('name');
+		console.log(animation);
+		socket.emit("animation change", animation);
+	});
+	$(".onoff").click(function() {
+		socket.emit("on off");
+	});
 });

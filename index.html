@@ -4,11 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ellie's Garden</title>
+    <title>Ellie's Garden Lighting</title>
 
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/rangeslider.css">
 
     <script type="text/javascript" src="js/socket-client.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -17,9 +16,27 @@
   </head>
   <body>
 
-    <input id="sliderRed" type="range" min="0" max="255" step="1" value="0" data-orientation="horizontal">
-    <input id="sliderGreen" type="range" min="0" max="255" step="1" value="128" data-orientation="horizontal">
-    <input id="sliderBlue" type="range" min="0" max="255" step="1" value="128" data-orientation="horizontal">
+    <h1>Ellie's Garden Lighting</h1>
+    <h2>Animations</h2>
+    <div class="animations">
+      <button class="button-animation" id="rainbow-dynamic" type="submit" data-name="rainbow dynamic">Rainbow</button>
+      <button class="button-animation" id="rainbow-twinkle" type="submit" data-name="rainbow twinkle">Rainbow Twinkle</button>
+      <button class="button-animation" id="custom-static" type="submit" data-name="custom static">Custom</button>
+      <button class="button-animation" id="custom-twinkle" type="submit" data-name="custom twinkle">Custom Twinkle</button>
+    </div>
+
+    <h2>Colours</h2>
+    <div class="colours">
+      <label for="sliderRed">Red</label>
+      <input id="sliderRed" type="range" min="0" max="255" step="1" value="0" data-orientation="horizontal">
+      <label for="sliderGreen">Green</label>
+      <input id="sliderGreen" type="range" min="0" max="255" step="1" value="128" data-orientation="horizontal">
+      <label for="sliderBlue">Blue</label>
+      <input id="sliderBlue" type="range" min="0" max="255" step="1" value="128" data-orientation="horizontal">
+    </div>
+    <div class="onoff">
+      <button id="on-off" type="submit">Turn lights <span>on</span></button>
+    </div>
 
   </body>
 </html>
